@@ -37,7 +37,10 @@ class LungLesionSeg(TaskConfig):
         super().init(name, model_dir, conf, planner, **kwargs)
 
         # Labels
-        self.labels = ['lesion']
+        self.labels = {
+            'lesion': 1
+        }
+        # self.labels = ['lesion']
 
         # Model Files
         self.path = [

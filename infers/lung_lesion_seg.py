@@ -28,7 +28,7 @@ class LungLesionSeg(InferTask):
         path,
         network=None,
         type=InferType.SEGMENTATION,
-        labels="lesion",
+        labels=None,
         dimension=1,
         description="lung lesion segmentation model over the grand challenge validation dataset",
         **kwargs,
